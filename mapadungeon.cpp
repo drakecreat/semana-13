@@ -32,8 +32,8 @@ int main (){
         for(int j =0 ;j<mapa[i].size();j++){
 
            suma_ += mapa[i][j];//paso 4
-            if(mapa[i][j] > max){max = mapa[i][j]; i= ifmax ; j = jfmax;}//Paso 5
-            if(mapa[i][j] < min){min = mapa[i][j]; i= ifmin ; j = jfmin;}//Paso 5
+            if(mapa[i][j] > max){max = mapa[i][j];  ifmax = i; jfmax= j;}//Paso 5
+            if(mapa[i][j] < min){min = mapa[i][j]; ifmin = i ; jfmin= j ;}//Paso 5
         }
         
         float promedio = suma_/mapa[i].size();//paso 4
